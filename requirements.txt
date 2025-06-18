@@ -1,0 +1,8 @@
+streamlit
+google-generativeai
+python-dotenv
+aiofiles
+chardet
+gitpython
+pygments
+rich
