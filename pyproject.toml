@@ -1,0 +1,27 @@
+[project]
+name = "codereview"
+version = "0.1.0"
+description = "AI-powered code review agent using Google Gemini API"
+readme = "README.md"
+authors = [
+    { name = "Muhammad Qasim", email = "mqasim111786111@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "google-generativeai>=0.3.0",
+    "rich>=13.0.0",
+    "python-dotenv>=1.0.0",
+    "gitpython>=3.1.0",
+    "pydantic>=2.0.0",
+    "typing-extensions>=4.0.0",
+    "streamlit>=1.28.0",
+    "click>=8.0.0",
+    "pygments>=2.15.0"
+]
+
+[project.scripts]
+codereview = "codereview.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
